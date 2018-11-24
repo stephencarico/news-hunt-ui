@@ -1,7 +1,12 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HomePage msg="Welcome to Your Vue.js App"/>
+    <div class="navbar-fixed">
+      <nav class="nav-extended">
+        <div class="nav-wrapper">
+          <img class="brand-logo center" src="./assets/icon-left-font-1.png">
+        </div>
+      </nav>
+    </div>
   </div>
 </template>
 
