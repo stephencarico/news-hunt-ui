@@ -1,12 +1,17 @@
 <template>
   <div id="app">
-    <div class="navbar-fixed">
-      <nav class="nav-extended">
-        <div class="nav-wrapper">
-          <img class="brand-logo center" src="./assets/icon-left-font-1.png">
-        </div>
+    <header>
+      <nav>
+        <ul>
+          <li class="nav-item">
+            <img class="logo" src="./assets/icon-left-font-1.png" alt="">
+          </li>
+        </ul>
       </nav>
-    </div>
+    </header>
+    <main>
+      <HomePage />
+    </main>
   </div>
 </template>
 
@@ -22,6 +27,10 @@ export default {
 </script>
 
 <style>
+body {
+  background: #f4f4f4;
+  background-attachment: fixed;
+}
 #app {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -29,5 +38,34 @@ export default {
   text-align: center;
   color: #2c3e50;
   margin-top: 60px;
+}
+main {
+  margin: 0 auto;
+  padding: 30px;
+  background-color: white;
+  width: 1024px;
+  min-height: 300px;
+}
+nav {
+  background-color: #fff;
+}
+.nav-item {
+  display: inline-block;
+  padding: 5px 10px;
+  font-size: 22px;
+  border-right: 1px solid #bbb;
+}
+.logo {
+  vertical-align: middle;
+  height: 30px !important;
+}
+.nav-item.cart {
+  position: relative;
+  margin-left: auto;
+  border-right: none;
+}
+.nav-link {
+  text-decoration: none;
+  color: inherit;
 }
 </style>
