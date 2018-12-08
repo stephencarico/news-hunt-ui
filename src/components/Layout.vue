@@ -8,12 +8,13 @@
 </template>
 
 <script>
-  import AppHeader from './AppHeader.vue'
-  import AppFooter from './AppFooter.vue'
-  export default {
-    components: {
-      'app-header': AppHeader,
-      'app-footer': AppFooter
-    }
-  }
+import AppHeader from './AppHeader.vue';
+import AppFooter from './AppFooter.vue';
+
+export default {
+  components: {
+    'app-header': AppHeader,
+    'app-footer': AppFooter,
+  },
+};
 </script>
